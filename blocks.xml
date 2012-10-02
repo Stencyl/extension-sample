@@ -18,6 +18,8 @@ returns = a TYPE
 <fields> - A list of fields that a block contains
 For children, the tag name corresponds to a TYPE. The order attribute starts at 0 and increments by 1. Do not skip values.
 
+If you wish to use a dropdown, look at the example below for syntax.
+
 3) Stuff that is not implemented yet
 
 - No support for dropdowns yet.
@@ -27,9 +29,15 @@ For children, the tag name corresponds to a TYPE. The order attribute starts at 
 -->
 
 <palette>
-	<block tag="test-print" spec="print %0 to console" code="Test.print(~);" type="action" color="gray" returns="void">
+	<block tag="test-print" spec="print %0 to console %1" code="Test.print(~); /* Testing: ~ */" type="action" color="gray" returns="void">
 		<fields>
 			<text order="0"></text>
+			<dropdown order="1">
+				<choices>
+					<c text="Pressed" code="1"></c>
+					<c text="Released" code="2"></c>
+				</choices>
+			</dropdown>
 		</fields>
 	</block>
 </palette>
