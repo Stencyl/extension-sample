@@ -22,8 +22,8 @@ If you wish to use a dropdown, look at the example below for syntax.
 
 3) Stuff that is not implemented yet
 
-- No support for dropdowns yet.
 - No support for embedded blocks yet.
+- No support for events.
 - This format will be reused for customized palettes in the future.
 
 -->
