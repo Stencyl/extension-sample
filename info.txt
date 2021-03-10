@@ -1,3 +1,4 @@
+id=com.example.extension
 name=Test Extension
 description=A test extension
 author=Jon
